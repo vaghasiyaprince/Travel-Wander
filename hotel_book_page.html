@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking | TravelWander</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hotel_book_page.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TravelWander</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="booking-container">
+        <h1 class="form-title">Hotel Reservation</h1>
+
+        <form action="index.html">
+            <!-- Guest Information -->
+            <div class="form-section">
+                <h2 class="section-title">Guest Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stay Details -->
+            <div class="form-section">
+                <h2 class="section-title">Stay Details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">Select Room Type</option>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="suite">Suite</option>
+                            <option value="executive">Executive Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rooms">Number of Rooms</label>
+                        <input type="number" id="rooms" name="rooms" min="1" max="5" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Requests -->
+            <div class="form-section">
+                <h2 class="section-title">Special Requests</h2>
+                <div class="form-group">
+                    <label for="requests">Additional Requests (Optional)</label>
+                    <textarea id="requests" name="requests" rows="4"
+                        placeholder="Any special requirements..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Booking</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TravelWander</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="hotel-container">
+        <form class="hotel-form" action="hotel_book_page.html">
+            <h1 class="hotel-title">Select Your Perfect Room</h1>
+
+            <div class="hotel-selection">
+                <!-- Hotel Option 1 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="standard" checked>
+                    <div class="hotel-card">
+                        <img src="h1.avif" alt="Standard Room" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Standard Room</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 2 guests</span>
+                                <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Free WiFi</span>
+                                <span>Air Conditioning</span>
+                            </div>
+                            <div class="hotel-price">₹2500/night</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Hotel Option 2 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="deluxe">
+                    <div class="hotel-card">
+                        <img src="h2.avif" alt="Deluxe Room" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Deluxe Room</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 2 guests</span>
+                                <span><i class="fas fa-bed"></i> 2 Queen Beds</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Ocean View</span>
+                                <span>Mini Bar</span>
+                            </div>
+                            <div class="hotel-price">₹3800/night</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Hotel Option 3 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="executive">
+                    <div class="hotel-card">
+                        <img src="h3.avif" alt="Executive Suite" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Executive Suite</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 4 guests</span>
+                                <span><i class="fas fa-bed"></i> King + Sofa Bed</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Living Area</span>
+                                <span>Work Desk</span>
+                            </div>
+                            <div class="hotel-price">₹4800/night</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Hotel Option 4 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="family">
+                    <div class="hotel-card">
+                        <img src="h4.avif" alt="Family Suite" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Family Suite</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 5 guests</span>
+                                <span><i class="fas fa-bed"></i> 2 Queens + Rollaway</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Connecting Rooms</span>
+                                <span>Kids Amenities</span>
+                            </div>
+                            <div class="hotel-price">₹6200/night</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Hotel Option 5 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="penthouse">
+                    <div class="hotel-card">
+                        <img src="h5.avif" alt="Penthouse Suite" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Penthouse Suite</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 4 guests</span>
+                                <span><i class="fas fa-bed"></i> King + 2 Twins</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Private Terrace</span>
+                                <span>Jacuzzi</span>
+                            </div>
+                            <div class="hotel-price">₹8500/night</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Hotel Option 6 -->
+                <label class="hotel-option">
+                    <input type="radio" name="hotel" value="presidential">
+                    <div class="hotel-card">
+                        <img src="h6.avif" alt="Presidential Suite" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Presidential Suite</h3>
+                            <div class="hotel-details">
+                                <span><i class="fas fa-user"></i> 6 guests</span>
+                                <span><i class="fas fa-bed"></i> 2 Kings + 2 Twins</span>
+                            </div>
+                            <div class="hotel-features">
+                                <span>Butler Service</span>
+                                <span>Private Elevator</span>
+                            </div>
+                            <div class="hotel-price">₹9500/night</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="book-btn">Reserve Now</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

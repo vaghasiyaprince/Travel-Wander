@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Booking Form | TravelWander</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="booking_page.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TravelWander</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Form Content -->
+    <main class="booking-form-container">
+        <h1 class="form-title">Complete Your Booking</h1>
+        <form action="index.html" method="get">
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h2 class="section-title">Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="id-proof" class="form-label">ID Proof Number</label>
+                        <input type="text" id="id-proof" name="id-proof" class="form-input" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="form-section">
+                <h2 class="section-title">Booking Details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-date" class="form-label">Pickup Date</label>
+                        <input type="date" id="pickup-date" name="pickup-date" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-time" class="form-label">Pickup Time</label>
+                        <input type="time" id="pickup-time" name="pickup-time" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="duration" class="form-label">Duration (hours)</label>
+                        <select id="duration" name="duration" class="form-select" required>
+                            <option value="">Select duration</option>
+                            <option value="2">2 hours</option>
+                            <option value="4">4 hours</option>
+                            <option value="8">8 hours</option>
+                            <option value="12">12 hours</option>
+                            <option value="24">24 hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-location" class="form-label">Pickup Location</label>
+                        <select id="pickup-location" name="pickup-location" class="form-select" required>
+                            <option value="">Select location</option>
+                            <option value="mumbai">Mumbai Main Office</option>
+                            <option value="delhi">Delhi Airport</option>
+                            <option value="bangalore">Bangalore City Center</option>
+                            <option value="hyderabad">Hyderabad Office</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Information -->
+            <div class="form-section">
+                <h2 class="section-title">Payment Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-name" class="form-label">Name on Card</label>
+                        <input type="text" id="card-name" name="card-name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number" class="form-label">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date" class="form-label">Expiry Date</label>
+                        <input type="month" id="expiry-date" name="expiry-date" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="text" id="cvv" name="cvv" class="form-input" required maxlength="3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-section">
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy
+                            Policy</a></label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Confirm Booking</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: 100% 100%;
+    color: #333;
+}
+
+
+/* Main Content */
+.hotel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Hotel Selection Grid */
+.hotel-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hotel-option {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hotel-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.hotel-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-option input[type="radio"]:checked+.hotel-card {
+    border: 2px solid #3498db;
+    background-color: #f0f8ff;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.hotel-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.hotel-info {
+    flex-grow: 1;
+}
+
+.hotel-name {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.hotel-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.hotel-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-top: auto;
+}
+
+
+/* Form Actions */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.book-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #219653;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hotel-container {
+        padding: 1rem;
+    }
+
+    .hotel-title {
+        font-size: 2rem;
+    }
+
+    .hotel-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .book-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}

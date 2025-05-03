@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Booking | TravelWander</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="vehicle_booking.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TravelWander</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="register_page.html">Register</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Vehicle Selection -->
+    <main class="vehicle-container">
+        <form action="booking_page.html" class="vehicle-form" method="get">
+            <h1 class="vehicle-title">Choose Your Vehicle</h1>
+
+            <div class="vehicle-selection">
+                <!-- Vehicle Option 1 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="economy" checked>
+                    <div class="vehicle-card">
+                        <img src="v1.jpg" alt="Renault Duster" class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name">Renault Duster</h3>
+                            <div class="vehicle-details">
+                                <span>6 seats</span>
+                                <span>AC</span>
+                            </div>
+                            <div class="vehicle-price">₹1500/hr</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Vehicle Option 2 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="premium">
+                    <div class="vehicle-card">
+                        <img src="v2.jpg" alt="Maruti Suzuki Swift" class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name"> Maruti Suzuki Swift</h3>
+                            <div class="vehicle-details">
+                                <span>4 seats</span>
+                                <span>AC</span>
+                            </div>
+                            <div class="vehicle-price">₹2000/hr</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Vehicle Option 3 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="suv">
+                    <div class="vehicle-card">
+                        <img src="v3.jpg" alt=" Mahindra XUV 3XO EV," class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name"> Mahindra XUV 3XO EV</h3>
+                            <div class="vehicle-details">
+                                <span>4 seats</span>
+                                <span>AC</span>
+                            </div>
+                            <div class="vehicle-price">₹3500/hr</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Vehicle Option 4 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="Audi Q7">
+                    <div class="vehicle-card">
+                        <img src="v4.jpg" alt="Audi Q7" class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name">Audi Q7</h3>
+                            <div class="vehicle-details">
+                                <span>4 seats</span>
+                                <span>Luxury</span>
+                            </div>
+                            <div class="vehicle-price">₹3000/hr</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Vehicle Option 5 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="Force Traveller 4020 Super">
+                    <div class="vehicle-card">
+                        <img src="v5.avif" alt="Force Traveller 4020 Super" class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name">Force Traveller 4020 Super</h3>
+                            <div class="vehicle-details">
+                                <span>20 seats</span>
+                                <span>Family</span>
+                            </div>
+                            <div class="vehicle-price">₹3500/hr</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Vehicle Option 6 -->
+                <label class="vehicle-option">
+                    <input type="radio" name="vehicle" value="Toyota Fortuner">
+                    <div class="vehicle-card">
+                        <img src="v6.avif" alt="Toyota Fortuner" class="vehicle-image">
+                        <div class="vehicle-info">
+                            <h3 class="vehicle-name">Toyota Fortuner</h3>
+                            <div class="vehicle-details">
+                                <span>8 seats</span>
+                                <span>Luxury</span>
+                            </div>
+                            <div class="vehicle-price">₹5000/hr</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="book-btn">Book Now</a>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

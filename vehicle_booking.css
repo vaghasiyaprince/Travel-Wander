@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: 100% 100%;
+    color: #333;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+}
+
+/* Main Content */
+.vehicle-container {
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+.vehicle-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Vehicle Selection Grid */
+.vehicle-selection {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vehicle-option {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.vehicle-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vehicle-option input[type="radio"]:checked+.vehicle-card {
+    border: 2px solid #3498db;
+    background-color: #f0f8ff;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.vehicle-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.vehicle-info {
+    flex-grow: 1;
+}
+
+.vehicle-name {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.vehicle-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.vehicle-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-top: auto;
+}
+
+/* Form Actions */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.book-btn {
+    text-decoration: none;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 1.8rem 6rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #219653;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .vehicle-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .vehicle-selection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
